@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "dotenv": "^16.5.0",
+    "dotnet": "^1.1.4",
+    "fastify": "^5.4.0",
+    "pg": "^8.16.3",
+    "pg-hstore": "^2.3.4",
+    "postgres": "^3.4.7",
+    "sequelize": "^6.37.7",
+    "uuid": "^11.1.0"
+  }
+}

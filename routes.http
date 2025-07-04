@@ -1,0 +1,63 @@
+//ESTOQUE
+###
+//READ
+GET http://localhost:5555/estoque/list
+
+GET http://localhost:5555/estoque/getbyid?id=c9600a38-da14-4439-8afd-33cdfe4442fd
+//?id
+###
+//CREATE
+POST http://localhost:5555/estoque/create?idfkproduto=482eef13-e1f5-4029-9f93-b1bf2e4d752e
+//?idfkproduto
+Content-Type: application/json
+
+{
+    "quantidade" : 150,
+    "setor" : "2A"
+}
+###
+//DELETE 
+DELETE  http://localhost:5555/estoque/delete/c6280214-e373-4eae-8e6d-1e79a05e7a61
+//  /:id
+
+
+
+###
+//CREATE
+POST http://localhost:5555/produtos/create
+Content-type: application/json
+
+{
+    "nome" : "terwwww 2k",
+    "preco" : 1000,
+    "descricao" : "Monitor lindo, bacana"
+}
+
+
+###
+//READ
+GET http://localhost:5555/produtos/list
+//?search
+###
+GET http://localhost:5555/produtos/getbyid?id=00a71595-011f-4b6f-9247-b97a2e3c66e9
+//?id
+
+###
+//EDIT
+PUT http://localhost:5555/produtos/edit/9fbff832-e267-4a61-bc19-dcd0c0c2e1af
+// edit/:id
+Content-type: application/json
+
+# {
+#     "nome": "monitor nome EDITADO",
+#     "preco": 2500,
+#     "descricao": "monitor muito muito muito bacana"
+# }
+
+###
+GET http://localhost:5555/produtos/edit/form/9fbff832-e267-4a61-bc19-dcd0c0c2e1af
+
+###
+//DELETE
+DELETE http://localhost:5555/produtos/delete/af07a593-8a30-488e-ba84-d7b6d200fb45
+// delete/:id
